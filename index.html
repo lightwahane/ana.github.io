@@ -2,95 +2,382 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
   <meta name="theme-color" content="#050407">
-  <meta name="description" content="A small universe made for you.">
+
+  <meta
+    name="description"
+    content="A small universe made for you."
+  >
+
   <title>All the Tomorrows — Our Story</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
   <div class="site-shell">
-    <canvas id="particles" aria-hidden="true"></canvas>
-    <div class="ambient ambient-a" aria-hidden="true"></div>
-    <div class="ambient ambient-b" aria-hidden="true"></div>
-    <div class="grain" aria-hidden="true"></div>
+
+    <!-- =====================================================
+         GLOBAL CINEMATIC EFFECTS
+         ===================================================== -->
+
+    <canvas
+      id="particles"
+      aria-hidden="true">
+    </canvas>
+
+    <div
+      class="ambient ambient-a"
+      aria-hidden="true">
+    </div>
+
+    <div
+      class="ambient ambient-b"
+      aria-hidden="true">
+    </div>
+
+    <div
+      class="grain"
+      aria-hidden="true">
+    </div>
+
+
+    <!-- =====================================================
+         TOP BAR
+         ===================================================== -->
 
     <header class="topbar">
-      <div class="progress"><span id="progressBar"></span></div>
-      <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle music">
+
+      <div class="progress">
+        <span id="progressBar"></span>
+      </div>
+
+      <button
+        class="music-toggle"
+        id="musicToggle"
+        type="button"
+        aria-label="Toggle music"
+      >
+
         <span class="music-dot"></span>
-        <span id="musicLabel">♪ Music</span>
+
+        <span id="musicLabel">
+          ♪ Music
+        </span>
+
       </button>
+
     </header>
 
+
+
+    <!-- =====================================================
+         STORY
+         ===================================================== -->
+
     <main id="story">
-      <!-- SCENE 1 -->
-      <section class="scene scene-intro" data-scene="1">
+
+
+      <!-- ===================================================
+           SCENE 1 — BEFORE YOU
+           =================================================== -->
+
+      <section
+        class="scene scene-intro"
+        data-scene="1"
+      >
+
         <div class="scene-inner intro-inner">
-          <div class="eyebrow">a little universe, just for you</div>
-          <div class="intro-copy" aria-live="polite">
-            <p class="line" data-delay="0">Hey...</p>
-            <p class="line" data-delay="1">I've been thinking about something.</p>
-            <p class="line" data-delay="2">Not about today.</p>
-            <p class="line final-line" data-delay="3">About all the tomorrows.</p>
+
+          <div class="eyebrow">
+            a little universe, just for you
           </div>
-          <button class="continue-btn" data-next type="button">continue <span>↓</span></button>
+
+
+          <div
+            class="intro-copy"
+            aria-live="polite"
+          >
+
+            <p
+              class="line"
+              data-delay="0"
+            >
+              Hey...
+            </p>
+
+            <p
+              class="line"
+              data-delay="1"
+            >
+              I've been thinking about something.
+            </p>
+
+            <p
+              class="line"
+              data-delay="2"
+            >
+              Not about today.
+            </p>
+
+            <p
+              class="line final-line"
+              data-delay="3"
+            >
+              About all the tomorrows.
+            </p>
+
+          </div>
+
+
+          <button
+            class="continue-btn"
+            data-next
+            type="button"
+          >
+            continue
+            <span>↓</span>
+          </button>
+
         </div>
+
       </section>
 
-      <!-- SCENE 2 -->
-      <section class="scene scene-memory" data-scene="2">
+
+
+      <!-- ===================================================
+           SCENE 2 — FIRST MEMORY
+           =================================================== -->
+
+      <section
+        class="scene scene-memory"
+        data-scene="2"
+      >
+
         <div class="scene-inner split-memory">
+
+
           <div class="memory-copy">
-            <div class="eyebrow">memory / 01</div>
-            <h2 class="reveal-lines">
-              <span>Somewhere along the way...</span>
-              <span>you became <em>my person.</em></span>
-            </h2>
-            <p class="body-copy">And I don't think I ever properly told you how much that means to me.</p>
-          </div>
-          <figure class="memory-frame frame-one" data-depth="1">
-            <div class="photo-glow"></div>
-            <div class="photo-sheen"></div>
-            <img src="assets/photo1.jpg" alt="A memory of us together" loading="eager">
-          </figure>
-        </div>
-      </section>
 
-      <!-- SCENE 3 -->
-      <section class="scene scene-memory scene-warm" data-scene="3">
-        <div class="scene-inner warm-inner">
-          <figure class="memory-frame frame-two" data-depth="2">
-            <div class="photo-glow"></div>
-            <div class="photo-sheen"></div>
-            <img src="assets/photo2.jpg" alt="A happy memory of us" loading="lazy">
-          </figure>
-          <div class="warm-copy">
-            <div class="eyebrow">memory / 02</div>
-            <h2 class="reveal-lines">
-              <span>We've already made</span>
-              <span>so many little memories.</span>
-            </h2>
-            <div class="memory-beats">
-              <span>Some planned.</span>
-              <span>Some completely random.</span>
-              <span>And some that I wish I could replay forever.</span>
+            <div class="eyebrow">
+              memory / 01
             </div>
-            <p class="body-copy">But when I look at us...<br><strong>I don't just think about what we've already lived.</strong></p>
+
+
+            <h2 class="reveal-lines">
+
+              <span>
+                Somewhere along the way...
+              </span>
+
+              <span>
+                you became <em>my person.</em>
+              </span>
+
+            </h2>
+
+
+            <p class="body-copy">
+              And I don't think I ever properly told you
+              how much that means to me.
+            </p>
+
           </div>
+
+
+
+          <figure
+            class="memory-frame frame-one"
+            data-depth="1"
+          >
+
+            <div
+              class="photo-glow"
+              aria-hidden="true">
+            </div>
+
+            <div
+              class="photo-sheen"
+              aria-hidden="true">
+            </div>
+
+
+            <!--
+              PHOTO 1
+              ------------------------------------------------
+              Direct GitHub raw URL.
+
+              No assets folder required.
+            -->
+
+            <img
+              src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo1.jpg"
+              alt="A memory of our hands together"
+              loading="eager"
+            >
+
+          </figure>
+
         </div>
+
       </section>
 
-      <!-- SCENE 4 -->
-      <section class="scene scene-future" data-scene="4">
-        <div class="scene-inner future-inner">
-          <div class="future-heading">
-            <div class="eyebrow">the unwritten part</div>
-            <h2>I think about everything<br><em>we haven't lived yet.</em></h2>
+
+
+      <!-- ===================================================
+           SCENE 3 — SECOND MEMORY
+           =================================================== -->
+
+      <section
+        class="scene scene-memory scene-warm"
+        data-scene="3"
+      >
+
+        <div class="scene-inner warm-inner">
+
+
+          <figure
+            class="memory-frame frame-two"
+            data-depth="2"
+          >
+
+            <div
+              class="photo-glow"
+              aria-hidden="true">
+            </div>
+
+            <div
+              class="photo-sheen"
+              aria-hidden="true">
+            </div>
+
+
+            <!--
+              PHOTO 2
+              ------------------------------------------------
+              Direct GitHub raw URL.
+            -->
+
+            <img
+              src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo2.jpg"
+              alt="A happy memory of us together"
+              loading="lazy"
+            >
+
+          </figure>
+
+
+
+          <div class="warm-copy">
+
+            <div class="eyebrow">
+              memory / 02
+            </div>
+
+
+            <h2 class="reveal-lines">
+
+              <span>
+                We've already made
+              </span>
+
+              <span>
+                so many little memories.
+              </span>
+
+            </h2>
+
+
+            <div class="memory-beats">
+
+              <span>
+                Some planned.
+              </span>
+
+              <span>
+                Some completely random.
+              </span>
+
+              <span>
+                And some that I wish I could replay forever.
+              </span>
+
+            </div>
+
+
+            <p class="body-copy">
+
+              But when I look at us...
+
+              <br>
+
+              <strong>
+                I don't just think about what we've already lived.
+              </strong>
+
+            </p>
+
           </div>
-          <div class="life-road" aria-hidden="true">
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===================================================
+           SCENE 4 — THE FUTURE
+           =================================================== -->
+
+      <section
+        class="scene scene-future"
+        data-scene="4"
+      >
+
+        <div class="scene-inner future-inner">
+
+
+          <div class="future-heading">
+
+            <div class="eyebrow">
+              the unwritten part
+            </div>
+
+
+            <h2>
+
+              I think about everything
+
+              <br>
+
+              <em>
+                we haven't lived yet.
+              </em>
+
+            </h2>
+
+          </div>
+
+
+
+          <div
+            class="life-road"
+            aria-hidden="true"
+          >
+
             <div class="road-glow"></div>
+
             <div class="road-line"></div>
+
+
             <span class="road-node n1"></span>
             <span class="road-node n2"></span>
             <span class="road-node n3"></span>
@@ -98,99 +385,444 @@
             <span class="road-node n5"></span>
             <span class="road-node n6"></span>
             <span class="road-node n7"></span>
+
+
             <div class="future-words">
-              <span>More mornings.</span>
-              <span>More late-night conversations.</span>
-              <span>More stupid jokes.</span>
-              <span>More adventures.</span>
-              <span>More difficult days.</span>
-              <span>More victories.</span>
-              <span>More ordinary days that somehow become special.</span>
+
+              <span>
+                More mornings.
+              </span>
+
+              <span>
+                More late-night conversations.
+              </span>
+
+              <span>
+                More stupid jokes.
+              </span>
+
+              <span>
+                More adventures.
+              </span>
+
+              <span>
+                More difficult days.
+              </span>
+
+              <span>
+                More victories.
+              </span>
+
+              <span>
+                More ordinary days that somehow become special.
+              </span>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
-      <!-- SCENE 5 -->
-      <section class="scene scene-centerpiece" data-scene="5">
+
+
+      <!-- ===================================================
+           SCENE 5 — THIRD PHOTO / EMOTIONAL CENTERPIECE
+           =================================================== -->
+
+      <section
+        class="scene scene-centerpiece"
+        data-scene="5"
+      >
+
         <div class="scene-inner centerpiece-inner">
-          <div class="centerpiece-backlight"></div>
-          <div class="dust-ring" aria-hidden="true"></div>
-          <figure class="memory-frame frame-three" data-depth="3">
-            <div class="photo-glow"></div>
-            <div class="photo-sheen"></div>
-            <img src="assets/photo3.jpg" alt="One of our memories" loading="lazy">
-          </figure>
-          <div class="centerpiece-copy">
-            <div class="eyebrow">the part I know</div>
-            <p class="sentence">I don't know what life has planned for us.</p>
-            <p class="sentence">I don't know where we'll be.</p>
-            <p class="sentence">I don't know what we'll become.</p>
-            <p class="sentence big-pause">But I know who I want beside me.</p>
-            <p class="you">You.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- SCENE 6 -->
-      <section class="scene scene-promise" data-scene="6">
-        <div class="scene-inner promise-inner">
-          <div class="promise-light"></div>
-          <div class="eyebrow">what I can promise</div>
-          <div class="promise-copy">
-            <p>I can't promise that every day will be perfect.</p>
-            <p>I can't promise that we'll never fight.</p>
-            <p>I can't promise that life will always be easy.</p>
-            <p class="promise-pause">But I can promise this...</p>
-            <p class="choose">I'll keep choosing you.</p>
-            <p class="small-promise">Through every version of us.</p>
-            <p class="small-promise">Through every stage of life.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- SCENE 7 -->
-      <section class="scene scene-question" data-scene="7">
-        <div class="memory-depth" aria-hidden="true">
-          <img src="assets/photo1.jpg" alt="">
-          <img src="assets/photo2.jpg" alt="">
-          <img src="assets/photo3.jpg" alt="">
-        </div>
-        <div class="scene-inner question-inner">
-          <div class="stars-layer" aria-hidden="true"></div>
-          <div class="question-copy">
-            <div class="eyebrow">one last thing</div>
-            <p class="question-small">So...</p>
-            <p class="question-small">I have one question.</p>
-            <h2>Will you walk through life with me?</h2>
-            <div class="chapters">
-              <span>Not just for the big moments.</span>
-              <span>For the little ones too.</span>
-              <span>For every chapter.</span>
-              <span>For all the chapters we haven't written yet.</span>
+          <div
+            class="centerpiece-backlight"
+            aria-hidden="true">
+          </div>
+
+
+          <div
+            class="dust-ring"
+            aria-hidden="true">
+          </div>
+
+
+          <figure
+            class="memory-frame frame-three"
+            data-depth="3"
+          >
+
+            <div
+              class="photo-glow"
+              aria-hidden="true">
             </div>
-            <p class="final-question">Will you be there for the lifetime of little moments with me?</p>
-            <button id="yesButton" class="yes-button" type="button">YES. ALWAYS. <span>♥</span></button>
+
+            <div
+              class="photo-sheen"
+              aria-hidden="true">
+            </div>
+
+
+            <!--
+              PHOTO 3
+              ------------------------------------------------
+              IMPORTANT:
+              Your third file is photo3.JPG with uppercase JPG.
+
+              GitHub is case-sensitive, so keep .JPG exactly.
+            -->
+
+            <img
+              src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo3.JPG"
+              alt="One of our memories"
+              loading="lazy"
+            >
+
+          </figure>
+
+
+
+          <div class="centerpiece-copy">
+
+            <div class="eyebrow">
+              the part I know
+            </div>
+
+
+            <p class="sentence">
+              I don't know what life has planned for us.
+            </p>
+
+            <p class="sentence">
+              I don't know where we'll be.
+            </p>
+
+            <p class="sentence">
+              I don't know what we'll become.
+            </p>
+
+
+            <p class="sentence big-pause">
+              But I know who I want beside me.
+            </p>
+
+
+            <p class="you">
+              You.
+            </p>
+
           </div>
+
         </div>
 
-        <div class="celebration" id="celebration" aria-hidden="true">
-          <div class="celebration-flash"></div>
-          <canvas id="celebrationCanvas"></canvas>
-          <div class="celebration-copy">
-            <p>Then let's make the rest of our story beautiful.</p>
-            <span>Chapter after chapter.<br>Day after day.<br>Together. <b>♥</b></span>
-            <button id="easterEgg" class="easter-egg" type="button">one more thing...</button>
-            <p id="secret" class="secret">If I had to choose again,<br>I'd still choose you.</p>
-          </div>
-        </div>
       </section>
+
+
+
+      <!-- ===================================================
+           SCENE 6 — THE PROMISE
+           =================================================== -->
+
+      <section
+        class="scene scene-promise"
+        data-scene="6"
+      >
+
+        <div class="scene-inner promise-inner">
+
+
+          <div
+            class="promise-light"
+            aria-hidden="true">
+          </div>
+
+
+          <div class="eyebrow">
+            what I can promise
+          </div>
+
+
+          <div class="promise-copy">
+
+            <p>
+              I can't promise that every day will be perfect.
+            </p>
+
+            <p>
+              I can't promise that we'll never fight.
+            </p>
+
+            <p>
+              I can't promise that life will always be easy.
+            </p>
+
+
+            <p class="promise-pause">
+              But I can promise this...
+            </p>
+
+
+            <p class="choose">
+              I'll keep choosing you.
+            </p>
+
+
+            <p class="small-promise">
+              Through every version of us.
+            </p>
+
+            <p class="small-promise">
+              Through every stage of life.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===================================================
+           SCENE 7 — THE QUESTION
+           =================================================== -->
+
+      <section
+        class="scene scene-question"
+        data-scene="7"
+      >
+
+
+        <!-- ===============================================
+             BACKGROUND MEMORY DEPTH
+             =============================================== -->
+
+        <div
+          class="memory-depth"
+          aria-hidden="true"
+        >
+
+          <!-- PHOTO 1 -->
+
+          <img
+            src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo1.jpg"
+            alt=""
+            loading="lazy"
+          >
+
+
+          <!-- PHOTO 2 -->
+
+          <img
+            src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo2.jpg"
+            alt=""
+            loading="lazy"
+          >
+
+
+          <!-- PHOTO 3 -->
+
+          <img
+            src="https://raw.githubusercontent.com/lightwahane/ana.github.io/refs/heads/main/photo3.JPG"
+            alt=""
+            loading="lazy"
+          >
+
+        </div>
+
+
+
+        <div class="scene-inner question-inner">
+
+
+          <div
+            class="stars-layer"
+            aria-hidden="true">
+          </div>
+
+
+          <div class="question-copy">
+
+            <div class="eyebrow">
+              one last thing
+            </div>
+
+
+            <p class="question-small">
+              So...
+            </p>
+
+
+            <p class="question-small">
+              I have one question.
+            </p>
+
+
+            <h2>
+              Will you walk through life with me?
+            </h2>
+
+
+            <div class="chapters">
+
+              <span>
+                Not just for the big moments.
+              </span>
+
+              <span>
+                For the little ones too.
+              </span>
+
+              <span>
+                For every chapter.
+              </span>
+
+              <span>
+                For all the chapters we haven't written yet.
+              </span>
+
+            </div>
+
+
+            <p class="final-question">
+              Will you be there for the lifetime of little
+              moments with me?
+            </p>
+
+
+            <button
+              id="yesButton"
+              class="yes-button"
+              type="button"
+            >
+
+              YES. ALWAYS.
+
+              <span>
+                ♥
+              </span>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CELEBRATION
+             ================================================= -->
+
+        <div
+          class="celebration"
+          id="celebration"
+          aria-hidden="true"
+        >
+
+          <div
+            class="celebration-flash"
+            aria-hidden="true">
+          </div>
+
+
+          <canvas
+            id="celebrationCanvas"
+            aria-hidden="true">
+          </canvas>
+
+
+          <div class="celebration-copy">
+
+            <p>
+              Then let's make the rest of our story beautiful.
+            </p>
+
+
+            <span>
+
+              Chapter after chapter.
+
+              <br>
+
+              Day after day.
+
+              <br>
+
+              Together.
+
+              <b>♥</b>
+
+            </span>
+
+
+            <!--
+              OPTIONAL EASTER EGG
+            -->
+
+            <button
+              id="easterEgg"
+              class="easter-egg"
+              type="button"
+            >
+              one more thing...
+            </button>
+
+
+            <p
+              id="secret"
+              class="secret"
+            >
+
+              If I had to choose again,
+
+              <br>
+
+              I'd still choose you.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
+
   </div>
 
-  <!-- Optional music: place your own file at assets/music.mp3 -->
-  <audio id="bgMusic" src="assets/music.mp3" loop preload="none"></audio>
+
+
+  <!-- =====================================================
+       OPTIONAL BACKGROUND MUSIC
+       -----------------------------------------------------
+       MUSIC IS HOSTED EXTERNALLY.
+
+       You do NOT need to upload love.mp3 to this repository.
+
+       The JavaScript also sets this source automatically,
+       but keeping it here makes the HTML self-contained.
+       ===================================================== -->
+
+  <audio
+    id="bgMusic"
+    src="https://github.com/lightwahane/meow.github.io/raw/refs/heads/main/love.mp3"
+    loop
+    preload="none"
+  ></audio>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
 
   <script src="script.js"></script>
+
 </body>
 </html>
